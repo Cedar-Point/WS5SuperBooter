@@ -1,0 +1,14 @@
+POST / HTTP/1.1
+Connection: Keep-Alive
+Content-Type: text/xml
+User-Agent: MDS POS Client
+Content-Length: 401
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Body xmlns:MCRS-ENV="MCRS-URI">
+        <MCRS-ENV:Service>MDSSYSUTILS</MCRS-ENV:Service>
+        <MCRS-ENV:Method>Reboot</MCRS-ENV:Method>
+        <MCRS-ENV:SessionKey>Session</MCRS-ENV:SessionKey>
+        <MCRS-ENV:InputParameters></MCRS-ENV:InputParameters>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
